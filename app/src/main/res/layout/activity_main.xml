@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:yiya="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F300"
+    android:orientation="vertical"
+    tools:context="com.shawn.yiyalearningdemo.MainActivity">
+
+    <com.shawn.yiyalearningdemo.RatingBar
+        android:id="@+id/ratingbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        yiya:rating="3"
+        yiya:starCount="5"
+        yiya:starEmpty="@mipmap/rating_empty"
+        yiya:starFill="@mipmap/rating_full"
+        yiya:starHalf="@mipmap/rating_half"
+        yiya:starImageHeight="40dp"
+        yiya:starImageHorizontalMargin="8dp"
+        yiya:starImageWidth="40dp"/>
+
+    <com.shawn.yiyalearningdemo.IndicatorView
+        android:id="@+id/indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="60dp"
+        yiya:indicatorCount="5"
+        yiya:indicatorMargin="30dp"
+        yiya:indicatorRedius="30dp"
+        yiya:slectedDrawable="@drawable/shape_point_gray"
+        yiya:unselectedDrawable="@drawable/shape_point_white"/>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/stroke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:lineSpacingExtra="4dp"
+        android:text="我是金光闪闪的字幕\n woshijinguangshanshandezimu\n I am heihei hei hei "
+        android:textColor="#fff"
+        android:background="#f0f"
+        android:textSize="20sp"/>
+
+    <FrameLayout
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:background="@drawable/hei">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/dog"/>
+
+    </FrameLayout>
+
+</LinearLayout>

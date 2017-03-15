@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <declare-styleable name="RatingBar">
+        <attr name="starImageSize" format="dimension"/>
+        <attr name="starImageWidth" format="dimension"/>
+        <attr name="starImageHeight" format="dimension"/>
+        <attr name="starImageHorizontalMargin" format="dimension"/>
+        <attr name="starCount" format="integer"/>
+        <attr name="rating" format="float"/>
+        <attr name="starEmpty" format="reference"/>
+        <attr name="starFill" format="reference"/>
+        <attr name="starHalf" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="IndicatorView">
+        <attr name="indicatorCount" format="integer"/>
+        <attr name="selectedIndicator" format="integer"/>
+        <attr name="indicatorMargin" format="dimension"/>
+        <attr name="indicatorRedius" format="dimension"/>
+        <attr name="slectedDrawable" format="reference"/>
+        <attr name="unselectedDrawable" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="StrokeTextView">
+        <attr name="textStrokeWidth" format="dimension"/>
+        <attr name="textStrokeColor" format="color"/>
+        <attr name="textIsPinyin" format="boolean"/>
+    </declare-styleable>
+</resources>

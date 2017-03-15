@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.djsz.rxjava2demo.MainActivity">
+
+    <Button
+        android:id="@+id/btn_basic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BasicRxJava"/>
+
+    <Button
+        android:id="@+id/btn_creating_operator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CreatingOperator"/>
+
+    <Button
+        android:id="@+id/btn_transforming_operator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TransformingOperator"/>
+
+    <Button
+        android:id="@+id/btn_filtering_operator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FilteringOperator"/>
+
+    <Button
+        android:id="@+id/btn_combining_operator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CombiningOperator"/>
+
+    <Button
+        android:id="@+id/btn_assistant_operator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AssistantOperator"/>
+
+    <Button
+        android:id="@+id/btn_flow_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Flowable And Backpressure"/>
+
+    <Button
+        android:id="@+id/btn_demo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RxDemo"/>
+
+</LinearLayout>

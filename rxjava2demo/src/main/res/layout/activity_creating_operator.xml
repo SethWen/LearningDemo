@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CreatingOperator"/>
+
+    <Button
+        android:id="@+id/btn_from"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FromOperator"/>
+
+    <Button
+        android:id="@+id/btn_just"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="JustOperator"/>
+
+    <Button
+        android:id="@+id/btn_range"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RangeOperator"/>
+
+    <Button
+        android:id="@+id/btn_interval"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="IntervalOperator"/>
+
+    <Button
+        android:id="@+id/btn_defer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DeferOperator"/>
+
+    <Button
+        android:id="@+id/btn_timer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TimerOperator"/>
+
+</LinearLayout>

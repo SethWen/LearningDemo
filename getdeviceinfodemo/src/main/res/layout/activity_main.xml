@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<uk.co.androidalliance.edgeeffectoverride.ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:edgeeffect_color="#FFB238">
+
+    <LinearLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="get EMIE"/>
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="get phone type"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="看看一样否！\n Look same or!"
+            android:textSize="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="看看一样否！\n Look same or!"
+            android:textSize="30dp"
+            android:textStyle=""
+            android:typeface="normal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="看看一样否！\n Look same or!"
+            android:textSize="30dp"
+            android:typeface="sans"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="看看一样否！\n Look same or!"
+            android:textSize="30dp"
+            android:typeface="monospace"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="看看一样否！\n Look same or!"
+            android:textSize="30dp"
+            android:typeface="serif"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="看看一样否！\n Look same or!"
+            android:textSize="30dp"
+            android:typeface="serif"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="看看一样否！\n Look same or!"
+            android:textSize="30dp"
+            android:typeface="serif"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="看看一样否！\n Look same or!"
+            android:textSize="30dp"
+            android:typeface="serif"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="看看一样否！\n Look same or!"
+            android:textSize="30dp"
+            android:typeface="serif"/>
+
+
+    </LinearLayout>
+</uk.co.androidalliance.edgeeffectoverride.ScrollView>
