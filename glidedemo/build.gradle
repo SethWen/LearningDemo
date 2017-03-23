@@ -1,11 +1,17 @@
+// Android application plugin，将会被配置为顶层 build.gradle 的依赖
 apply plugin: 'com.android.application'
 
 android {
+    // 以下这两行是必需的
+    // 编译 App 的 API 版本
     compileSdkVersion 25
+    // 编译器使用的 build tools 版本，包含一系列工具，目录为 C:\Develop\AndroidStudio\sdk\build-tools\25.0.1
     buildToolsVersion "25.0.1"
 
     defaultConfig {
+        // 默认情况下 applicationId 和 PackageName 一致。是 Apk 在设备和 GooglePlay 的唯一标记，方便生成两个不同的 Apk。而 PackageName 则只用于 source 和 R 文件
         applicationId "com.djsz.glidedemo"
+        // 以下 4 行 信息会重写 Manifest 中的对应内容，左右 Manifest 中不用编写这些内容
         minSdkVersion 19
         targetSdkVersion 25
         versionCode 1
@@ -15,6 +21,8 @@ android {
 
         vectorDrawables.useSupportLibrary = true
     }
+
+    // buildTypes 代码块下定义 build 不同类型的 Apk
     buildTypes {
         release {
             minifyEnabled false
