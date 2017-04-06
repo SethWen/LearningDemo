@@ -35,7 +35,23 @@ android {
             keyAlias "shawn_release"
             keyPassword "shawn_release"
         }
+    }
 
+    sourceSets {
+        main {
+            res.srcDirs =
+                    [
+                            'src/main/res/layouts',
+                            'src/main/res',
+                            'src/main/res/layouts/home',
+                            'src/main/res/layouts/login',
+                            'src/main/res/layouts/hot_sale',
+                            'src/main/res/layouts/amuse',
+                            'src/main/res/layouts/delicacy',
+                            'src/main/res/layouts/food_management',
+                            'src/main/res/layouts/settings',
+                    ]
+        }
     }
 }
 
