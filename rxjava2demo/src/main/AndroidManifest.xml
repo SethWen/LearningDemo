@@ -19,6 +19,8 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".bus.RxBus2Activity"/>
+
         <activity android:name=".BasicRxJavaActivity"/>
         <activity android:name=".CreatingOperatorActivity"/>
         <activity android:name=".TransformingOperatorActivity"/>

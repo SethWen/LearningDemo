@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">SqlDemo</string>
+    <string name="ppp"><![CDATA[Plan & Price]]></string>
+    <string name="aaa" formatted="false">%s&amp;%s</string>
 </resources>

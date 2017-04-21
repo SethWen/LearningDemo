@@ -18,6 +18,7 @@ import io.reactivex.ObservableSource;
 import io.reactivex.ObservableTransformer;
 import io.reactivex.Observer;
 import io.reactivex.disposables.Disposable;
+import io.reactivex.functions.Consumer;
 import io.reactivex.functions.Function;
 
 /**
@@ -46,7 +47,7 @@ public class TransformingOperatorActivity extends AppCompatActivity {
      */
     private void testLiftOperator() {
         Observable
-                .range(1,20)
+                .range(1, 20)
                 .lift(new ObservableOperator<String, Integer>() {
                     @Override
                     public Observer<? super Integer> apply(Observer<? super String> observer) throws Exception {
@@ -61,7 +62,7 @@ public class TransformingOperatorActivity extends AppCompatActivity {
 
                     @Override
                     public void onNext(String value) {
-
+                        Log.i(TAG, "onNext: value = " + value);
                     }
 
                     @Override
@@ -74,19 +75,49 @@ public class TransformingOperatorActivity extends AppCompatActivity {
 
                     }
                 });
+
     }
 
     /**
      * Compose 操作符
      */
     private void testComposeOperator() {
+        ObservableTransformer transformer = new ObservableTransformer() {
+            @Override
+            public ObservableSource apply(Observable upstream) {
+
+                return null;
+            }
+        };
+
         Observable
-                .range(0,10)
+                .range(1,9)
+                .flatMap(new Function<Integer, ObservableSource<?>>() {
+                    @Override
+                    public ObservableSource<?> apply(Integer integer) throws Exception {
+                        return Observable.fromArray("");
+                    }
+                })
+                .subscribe(new Consumer<Object>() {
+                    @Override
+                    public void accept(Object o) throws Exception {
+
+                    }
+                });
+
+        Observable
+                .range(0, 10)
                 .compose(new ObservableTransformer<Integer, String>() {
                     @Override
                     public ObservableSource<String> apply(Observable<Integer> upstream) {
                         // 将上游的 Observable 转换为一个 新的 Observable 输出 供下游处理
-                        return null;
+                        Observable<String> map = upstream.map(new Function<Integer, String>() {
+                            @Override
+                            public String apply(Integer integer) throws Exception {
+                                return integer + "compose";
+                            }
+                        });
+                        return map;
                     }
                 })
                 .subscribe(new Observer<String>() {
@@ -97,7 +128,7 @@ public class TransformingOperatorActivity extends AppCompatActivity {
 
                     @Override
                     public void onNext(String value) {
-
+                        Log.i(TAG, "onNext: value = " + value);
                     }
 
                     @Override
